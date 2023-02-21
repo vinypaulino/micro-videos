@@ -4,4 +4,4 @@ USER node
 #Pasta de trabalho igual ao volume definido no docker-compose
 WORKDIR /home/node/app
 #Executa o comando para "segurar o terminal"
-CMD [ "tail", "-f" "/dev/null" ]
+CMD [ "sh", "-c", "npm install && tail -f /dev/null" ]
